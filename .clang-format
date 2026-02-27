@@ -1,0 +1,29 @@
+# Базовый стиль (можно выбрать Google, LLVM, Mozilla)
+# BasedOnStyle: LLVM
+BasedOnStyle: LLVM
+
+# 1. ВЫРАВНИВАНИЕ ПРИСВАИВАНИЙ (int a = 1; int bbb = 2;)
+# 'Consecutive' заставляет clang-format выравнивать '=' в соседних строках
+# AlignConsecutiveAssignments:
+#   Enabled: true
+#   AcrossEmptyLines: false # Не выравнивать через пустую строку
+#   AcrossComments: true    # Выравнивать, если между строками есть комментарий
+
+# 2. ВЫРАВНИВАНИЕ ОБЪЯВЛЕНИЙ (int    a; double bbb;)
+AlignConsecutiveDeclarations:
+  Enabled: true
+
+# 3. ВЫРАВНИВАНИЕ МАКРОСОВ (#define SHORT 1; #define LONGER_NAME 2)
+AlignConsecutiveMacros:
+  Enabled: true
+
+# 4. ВЫРАВНИВАНИЕ КОММЕНТАРИЕВ в конце строк
+AlignTrailingComments: true
+
+# 5. НАСТРОЙКИ ОТСТУПОВ
+IndentWidth: 2
+# ColumnLimit: 100 # Максимальная длина строки
+
+# 6. ОСОБЫЕ ПРАВИЛА ДЛЯ ТАБЛИЦ ИНИЦИАЛИЗАЦИИ
+# Помогает не схлопывать массивы/структуры в одну длинную строку
+Cpp11BracedListStyle: true
