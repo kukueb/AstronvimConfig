@@ -15,6 +15,7 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+require "treesitter_compat"
 require "lazy_setup"
 require "polish"
 

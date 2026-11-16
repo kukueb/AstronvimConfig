@@ -5,5 +5,11 @@ return {
     window = {
       position = "right", -- Options: "left", "right", "float", "current"
     },
+    nesting_rules = {
+      unity_meta = {
+        pattern = "(.*)%.cs$",
+        files = { "%1.cs.meta" },
+      },
+    },
   },
 }
