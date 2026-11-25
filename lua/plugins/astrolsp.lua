@@ -38,11 +38,22 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "gdscript",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = {
+        cmd = {
+          "clangd",
+          "--background-index",
+          "--query-driver=/nix/store/*/bin/*",
+        },
+      },
+      -- gdscript = {
+      --   cmd
+      -- },
     },
     -- customize how language servers are attached
     handlers = {
