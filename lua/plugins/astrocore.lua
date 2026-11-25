@@ -61,6 +61,9 @@ return {
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
+        -- Open neogit
+        ["<Leader>gg"] = {"<cmd>Neogit<cr>", desc = "Open Neogit" },
+
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()

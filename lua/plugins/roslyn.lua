@@ -13,5 +13,7 @@ return {
     })
     require("roslyn").setup(opts)
   end,
+  ---@module "roslyn.config"
+  ---@type RoslynNvimConfig
   opts = {},
 }

@@ -23,3 +23,4 @@ require "polish"
 -- Добавляем поддержку русской раскладки в Normal mode
 -- Флаг 'langmap' сопоставляет русские символы с английскими
 vim.opt.langmap = 'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
+vim.opt.clipboard = "unnamedplus"
